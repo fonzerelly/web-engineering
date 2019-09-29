@@ -1,0 +1,161 @@
+TAG 1
+0 Ablauf der Vorlesung
+    0.1 Ziel der Vorlesung
+    0.2 Vorstellung der Referatsthemen:
+        0.2.0 Google Web Toolkit
+        0.2.1 WebComponents
+        0.2.2 Angular
+        0.2.3 React Redux
+        0.2.4 Vue
+        0.2.5 Elm
+    0.3 Studienarbeit
+        0.2.1 Projektidee Kreuzwort-Spiel
+        0.2.2 Projektidee Senso Spiel
+        0.2.3 Projektidee Mastermind
+        0.2.4 Projektidee 2048
+        0.2.5 Projektidee Stars-Graph (IMDB API)
+        0.2.6 Projektidee Github Contribution Ranking (Github API)
+
+1 Geschichte der Client-Server-Architektur
+    1.0 HTTP-Prototokol
+    1.1 Serverside Rendering
+    1.2 Single-Side-Pages mit REST
+    1.3 WebSockets
+    1.3 Exot: Meteor
+
+2 Software Entwicklungsprozess
+    2.0 Agile Manifest vs Waterfall
+    2.1 Scrum
+        2.1.1 Rollen (PO, SM, Team)
+        2.1.2 Dokumente (DoD, DoR, UserStory, Epic)
+        2.1.3 Sprint
+        2.1.4 Meetings (Daily, Planning I, Planning II, Storytime, Review, Retro)
+        2.1.5 Tools (Trello, Github)
+    2.2 Extreme Ownership (bzw. was häufig in der Praxis fehlt)
+    2.3 Domain Driven Design
+        2.3.0 Ubiquitäre Sprache
+        2.3.1 Event Storming
+        2.3.2 Hexagonale Architektur
+        2.3.3 Bestandteile des Domänen Models
+
+3 Scratch Seminar
+    3.1 Kurze Vorstellung von Scratch und seiner Funktionsweise
+    3.2 Eigentständige Bearbeitung der Aufgabenstellung Hexenwald
+    3.3 Mob Programming: Space Invaders
+
+
+TAG 2
+4 Qualitätsmaßnahmen
+    4.1 Versionskontrolle mit Git
+        4.1.1 Wozu Versionskontrolle
+        4.1.2 Zentralisierte Versionskontroll Systeme
+        4.1.2 Grundlegende Gitbefehle
+        4.1.3 Git Workflows
+    4.2 Continious Integration
+        4.2.1 Wozu Continious Integration
+        4.2.2 Linux-Shell und wichtigste Shellscripte
+        4.2.3 Travis CI
+    4.3 Automatische Tests
+        4.3.1 Test Pyramide
+        4.3.2 Testarten (Unit-, Integrations-, Acceptanztests)
+        4.3.3 TestDrivenDevelopment
+        4.3.4 CodeCoverage vs Mutation Based Testing
+        4.3.5 Proberty Based Testing
+        4.3.6 Cucumber & Gherkyn
+    4.4? Continious Deployment
+        4.4.1 Dev- vs Test- vs Produktivumgebung
+        4.4.2 Docker
+        4.4.3 Kybernetis
+
+5 Git / npm Seminar
+    5.1 Git-Kata
+    5.2 Veröffentlichen via Github-Pages
+    5.3 npm und package.json
+    5.4 npm scripte
+    5.5 TDD im MobProgramming
+
+TAG 3
+6 JavaScript
+    6.1 Geschichte von JavaScript
+        6.1.1 Eine Programmiersprache in 10 Tagen
+        6.1.2 BrowserWars
+        6.1.3 V8 und NodeJS
+        6.1.4 JS als CompileTarget
+    6.2 Warum JavaScript anders ist als andere Programmiersprachen
+        6.2.1 == vs ===
+        6.2.2 IEEE 764 Probleme
+        6.2.3 Hoisting
+        6.2.4 Prototypal Inheritance
+        6.2.5 this ist nicht gleich this
+    6.3 Man kann alles fixen
+        6.3.1 Polyfills und Shims
+        6.3.2 jQuery
+        6.3.3 Underscore, Lodash, Ramda
+        6.3.4 mocha, jasmine, jest
+
+    6.4 Studentenreferate
+
+TAG 4
+    6.5 Asynchrone Programmierung in JS
+        6.5.1 SingleThread Language & Event Loop
+        6.5.2 Callback-Hell
+        6.5.3 Promises
+        6.5.4 async / await
+        6.5.5 rx.js
+
+    6.6. Funktionale Programmierung in JS
+        6.6.1 Functions sind first class citicens
+        6.6.2 Higher Order Functions
+        6.6.3 Closures
+        6.6.4 Currying
+        6.6.5 Componieren von Funktionen
+        6.6.6 Seiteneffekte
+        6.6.7 filter map reduce
+
+    6.7 Seminar Functional Programming (http://jsfiddle.net/0edzvay0/)
+
+TAG 5
+    6.8 Komplexe Programme im Browser
+        6.8.1 Problem: Alles im Global Namespace
+        6.8.2 IFFEs (Immediately invoked function expressions)
+        6.8.3 CDNs
+        6.8.4 Konkatenieren und Minifizieren mit BatchTools (grunt, gulp)
+        6.8.5 require durch BuildTools (browserify, webpack)
+        6.8.6 SourceMaps
+
+    6.9 TypeScript
+        6.9.1 Warum Typescript?
+        6.9.2 Syntax
+        6.9.3 Definitly Typed
+        6.9.4 tslint
+        6.9.5 Advanced Types
+
+    6.10. CodeRetreat mit tsnode
+
+TAG 6
+    6.11 WebSecurity
+        6.11.1 Angriffsvektor Cross-Site-Scripting (XSS)
+        6.11.2 Cross-Origin-Resource-Sharing
+
+7 HTML & CSS
+    7.1 Div über Table
+    7.2 CSS-Selektoren und ihre Gewichtung
+    7.3 CSS-Strukturierung (SMACSS vs BEM)
+    7.4 Mobile First
+    7.5 CSS Libraries (960 grid, bootstrap, GoogleMaterial?)
+    7.6 LESS vs SASS
+
+8 WebSite Performance
+    8.1 Warum Performance Optimierung
+    8.2 Wie rendert der Browser
+    8.3 Wie sollten CSS-Selektoren unter performance gesichtspunkten aussehen
+    8.4 AnalyseTools
+    8.5 Messbare vs gefühlter Performance
+    8.6 Vorausrendern auf dem Server
+    8.5 Tipps zur Performance-Verbesserung
+
+Seminar Performance Analyse mit Chrome
+
+TAG 7
+9 Studienprojekt Präsentationen
+
