@@ -74,8 +74,85 @@ people, so that 2 good programmers come up 3 medicore programmers.
 abcdefgh ijklmnopqrstu -> ghijkl femno dcpqr abstu 
 
 ??HORIZONTAL
-## Presentations
-*
+## Break for 10 Minutes
+Select a group name
 
 ??HORIZONTAL
-## Break for 10 Minutes
+## Presentations
+* All Presentations have to be prepared until 9.11.2019 <!-- .element: class="fragment" -->
+* Shall take about 20 min and 10 min questions <!-- .element: class="fragment" -->
+* As Preperation work through the "Getting Started" Tutorials <!-- .element: class="fragment" -->
+* Present the CoreFeatures of the specific Famework <!-- .element: class="fragment" -->
+* Give a simple example from Getting Started <!-- .element: class="fragment" -->
+* Give your groups gut feeling. Did you like the Framework? Do you want to use it for your project? <!-- .element: class="fragment" -->
+
+??HORIZONTAL
+## Presentations
+* <a href="https://www.webcomponents.org/introduction">WebComponents</a> <!-- .element: class="fragment" -->
+* <a href="https://angular.io/tutorial">Angular</a> <!-- .element: class="fragment" -->
+* <a href="https://www.valentinog.com/blog/redux/">React Redux</a> <!-- .element: class="fragment" -->
+* <a href="https://guide.elm-lang.org/">Elm</a> <!-- .element: class="fragment" -->
+
+??NOTE
+You do not need to use the framework, you present here, as framework in your software project. Just get an impression and inspiration what fits your needs. So which group takes which framework to present?
+
+??HORIZONTAL
+## About the Software Project
+1. Feel free to bring in your own ideas <!-- .element: class="fragment" -->
+1. Feel free to in include a backend solution <!-- .element: class="fragment" -->
+1. Everybody codes! <!-- .element: class="fragment" -->
+1. I can always get the latest working iteration of your software <!-- .element: class="fragment" -->
+1. I get access to your version control system <!-- .element: class="fragment" -->
+1. I get access to your ticket system <!-- .element: class="fragment" -->
+1. I get access to your wiki <!-- .element: class="fragment" -->
+1. I get your final tag <!-- .element: class="fragment" -->
+
+??NOTE
+Before I present you my ideas for Software Projects you can implement, let me say
+1. All of these ideas are only ideas. If you have your own idea what your group wants to implement, then I will be happy to support you in it, as long it has a certain complexity. So I will not allow a pure commandline tool without gui.
+2. All of these ideas have in common, that they do not need a backend server, to keep the complexity of system accesability away from you. But if you are able to include a backend server you can do so.
+3. All of these ideas are not too complicated to realize. Maybe the most talented in your groups might hack one of those ideas in about 1-2 days. But I do not want you to quickly hack a result. I want you to get an idea how the process of implementing software in the industry looks like. Therefore I want all of your Teammates to code for the project and the skille programmers should also take care to set up a valid continious integration environmentor even continious deployment environment.
+4. This means, me, your customer will always be able to see the latest usable iteration of your product.
+5. I need access to your version controll system.
+6. This means also, me, your lecturer, will have access to your ticket system.
+7. And finally I get access to your wiki, where you will document your process and potential ugly parts that might arise.
+8. When you think your done, you will tag the wiki and the repository with "Abschluß" and give me in adition the sha hashes of them. By that I will be able to have a final state of your work and will mark exactly that.
+
+??HOIZONTAL
+## Proposal I
+# Mensch ärgere Dich nicht
+Bild
+
+??NOTE
+Let's make a clone of the well known board game. There should also be a computer player to play against.
+
+??HORIZONTAL
+## Proposal II
+# Crossword Puzzle
+
+??NOTE
+Let the user enter a word, look it up on wikipedia and randomly select words from that article and combine them to a crossword puzzle. The user will get a list of the used words and can by drag and drop complete the puzzle.
+
+??HORIZONTAL
+## PROPOSAL III
+# DataDetector
+## with Electron
+
+??NOTE
+A tool that scans a specific directory on your harddrive and displays which subdirectory needs how much disk space.
+To be able to access the hardware we use Electron.
+
+??HORIZONTAL
+## PROPOSAL IV
+# Stock Checker 
+## Browser Plugin
+
+??NOTE
+A Browser Plugin, that is able to check when one of the users selected stock values exceeds or falls below a certain price. By the way, although I will show you how to use our api, I will gain nothing from it, since it is very unrealistic that my company will provide such a tool to the users.
+
+??HORIZONTAL
+## Proposal II
+# Mensch ärgere Dich nicht!
+Bild
+
+??NOTE
