@@ -82,6 +82,12 @@ The Daily
 ??NOTE
 Everyday the Team and the ScrumMaster meet for about 10-15 Minutes to inform each other about each members progress. Possible Problems that a team member might encounter, have to be named and should be discussed and solved afterwards. This Meeting is for the team mate not the Scrum Master or the PO.
 
+??HORIZONTAL
+### Meetings
+The Grooming / Storytime
+
+??NOTE
+This is the timeslot, the ScrumMaster gives the PO in the Sprint to ask the team about the feasability of a specific need. The PO presents what needs to be done, and the team 
 
 ??HORIZONTAL
 ### Meetings
@@ -102,11 +108,28 @@ In the retro, the Scrum Master tries to find out the mood of the team and looks 
 Definition of Ready
 
 ??NOTE
-In this document the Scrum-Team defines what has to be done, so that a story can be integrated into a sprint. This can define some rules for a user story and / or what has to be  clearified before the story can be worked on.  For example you might define here that you only start working on a story when the interface of a depending module is finite. It is also a template for the user story.
+This document is a kind of checklist, the Scrum-Team defines what has to be fullfilled before a story can be integrated into a sprint. This can define some rules for a user story and / or what has to be  clearified before the story can be worked on.  For example you might define here that you only start working on a story when the interface of a depending module is finite. It is also a template for the user story.
+
+
+??HORIZONTAL
+### Exercise DoR
+??NOTE
+Now let us what do you think should be part of a user Story?
+* ID
+* Title
+* Who / Role
+* What / Need
+* When / Context
+As a <Role> I <Need> when <Context>
+* Acceptance Criteria
+* Estimation
+
+
 
 ??HORIZONTAL 
 ## Documents
 Definition of Done
 
 ??NOTE
-DoD describes what has to be done to finish a User Story. Not only the implementation, it can specify that there should be unit tests, integrationt tests, acceptance tests. 
+This checklist contains what has to be done to finish a User Story. Not only the implementation, it can specify that there should be unit tests, integration tests, acceptance tests or documentation.
+
