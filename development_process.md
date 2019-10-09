@@ -87,7 +87,21 @@ Everyday the Team and the ScrumMaster meet for about 10-15 Minutes to inform eac
 The Grooming / Storytime
 
 ??NOTE
-This is the timeslot, the ScrumMaster gives the PO in the Sprint to ask the team about the feasability of a specific need. The PO presents what needs to be done, and the team 
+This is the timeslot, the ScrumMaster gives the PO in the Sprint to ask the team about the feasability of a specific need. The PO presents what needs to be done, and the team estimates how complicate this can be. This will be done by Planning Poker
+
+??HORIZONTAL
+### Exercise
+Planning Poker
+
+* Estimates Complexity - not Duration
+* Only Fibunaccy Nrs are valid to represent only big differences
+* Gives the opportunity to find underestimated risks
+
+??NOTE
+How does it work. Well first of all, it we have to recognize, that you can not estimate the time you need for a task quite good. Especially in the grooming phase, when you just got the plain idea of a feature and you did not dig through the code a little bit it is very very hard to give valid time estimations. Instead you estimate the complexity of a task. 
+How do you do it? After explaining the UserStory, every Team member selects one of the fibunacci oriented values  to estimate the complexity. Then everybody presents her/his estimation at the same time.
+Now we can ask those who bring the lowest and those who bring the highest value. Each explains why she or he estimated that way and by that you get into a fruitful discussion how to implement the feature and where the risks are. 
+
 
 ??HORIZONTAL
 ### Meetings
@@ -102,6 +116,29 @@ The Retro
 
 ??NOTE
 In the retro, the Scrum Master tries to find out the mood of the team and looks for ways to improve it. They should discuss what worked and what did not work and how to prevent problems in the future.
+
+??HORIZONTAL
+## Documents
+Backlog
+
+??NOTE
+This is the prioritized collection of UserStories that shall be implemented in the long run. The Backlog might grow over time.
+
+??HORIZONAL
+## Documents
+Burn-Down-Chart
+
+??NOTE
+In the Burn-Down-Chart you can see the trend how good you can full fill you commitment. But you can also see the velocity and over the time see if your performance improves or not. 
+
+??HORIZONTAL 
+## Documents
+Definition of Done
+
+??NOTE
+This checklist contains what has to be done to finish a User Story. Not only the implementation, it can specify that there should be unit tests, integration tests, acceptance tests or documentation. What might be part of the DoD will be part of the next lecture.
+
+
 
 ??HORIZONTAL
 ### Documents
@@ -120,16 +157,37 @@ Now let us what do you think should be part of a user Story?
 * Who / Role
 * What / Need
 * When / Context
-As a <Role> I <Need> when <Context>
-* Acceptance Criteria
+As a &lt;Role&gt; I &lt;Need&gt; when &lt;Context&gt;
+* Accepptance Criteria: What should happen
+* Examples:
+ * Context 
+ * Action 
+ * Outcome
 * Estimation
 
-
-
-??HORIZONTAL 
-## Documents
-Definition of Done
+??HORIZONTAL
+### Execise UserStory
+<img src="images/youtube-example.png">
+Please write a UserStory that might have been used to define the
+functionality of the red “Abonnieren”-Button (subscription-Button) on the
+left below the video image.
 
 ??NOTE
-This checklist contains what has to be done to finish a User Story. Not only the implementation, it can specify that there should be unit tests, integration tests, acceptance tests or documentation.
+Title: Subscribe to a YouTube-Channel
+Description: As a YoutubeUser I want to be informed about new videos from the
+author that I am currently watching.
+Acceptance Criteria:
+  * The Channel gets stored in the Users Profile
+  * The Button should turn into gray
+  * The Button should display the number of all subscriptions
+  * When the User is not logged in, it should open googles LogIn-Window
 
+Examples:
+Context:            Action:             Outcome:
+User is loggedin    User clicks         "Abbonieren"-Button turns gray 
+Watches Video of HS abbonieren          Channels is stored in Profile
+User not subscribed
+
+??HORIZONTAL
+## Your Task until next time
+* Create User Stories for your Poject according to the topic you have choosen.
