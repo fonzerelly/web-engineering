@@ -1,7 +1,6 @@
-## Web Engineering
-<br><br>
 Christian H&ouml;rauf<br>
-<img src="images/twitter.png" width="5%"><sup>@fonzygruen</sup>
+<img src="images/twitter.png" width="5%"><sup>@fonzygruen</sup><br>
+Email: christian.hoerauf@gmail.com
 
 ??Note
 Welcome to the Seminar of Web-Engineering. My name is Christian Hörauf, and I have been working the IT-Industry for 16 years now. 7 of them I spend in the Web-Business as Frontend Developer. Currently I work for Consorsbank in Nürnberg.
@@ -26,12 +25,8 @@ Note:
 Jeder von Ihnen hat vermutlich heute ein Smartphone in der Tasche.  -->
 
 ??HORIZONTAL
-## First things first
-How will you be graded?
-* Presentation 20% <!-- .element: class="fragment" -->
-* Software Project <!-- .element: class="fragment" -->
-  * Realization and presentation of the Project 40% <!-- .element: class="fragment" -->
-  * Development process 40% <!-- .element: class="fragment" -->
+## How you will be graded
+<img src="images/Bewertung_1.jpg">
 
 ??NOTE
 I know, I know, you are very interested in the topic itself. But somehow you need a grade for this course. So the good message is, there won't be Test for this course. But I have several bad news for you. You will do a presentation about a web framework, which will take 20% of the end result. In addition we will create a Software project together. This will be some kind of simple Frontend only game or if you come up with an interesting idea, I would like to support you in realizing it. But the Project itself and how you present it will only be rated with 40% of the complete grade. The missing 40% I will spend on the way you will implement the project. So what quality measures do you take, how fast can you deploy a new version and similar aspects, that we will discuss on the second seminar day.
@@ -44,11 +39,21 @@ I know, I know, you are very interested in the topic itself. But somehow you nee
 * Thu 12.12.2019 10:00-17:30
 * Sat 14.12.2019 10:00-17:30
 * xxx xx.01.2020 10:00-17:30 <!-- .element: class="fragment" -->
-* xxx xx.01.2020 10:00-17:30 <!-- .element: class="fragment" -->
 
 ??NOTE
 Besides the 5 Course-Days we will have this year, we will have another one in January. Since we do not yet exactly know, when your Tests will we be, we will have to figure out the last dates, when you know your Test appointments. (around november)
-In addition, you will work on the software projects in groups of 4-5 students. I will act as Product Owner (I will explain later what that is) of your projects, so that I can take into account that your time is limited. To do so, each group will have a video chat with me for about 30 minutes every two weeks. -->Define Group Chat dates upfront
+In addition, you will work on the software projects in groups of 4-5 students. I will act as Product Owner (I will explain later what that is) of your projects, so that I can take into account that your time is limited. To do so, each group will have a video chat with me for about 30 minutes every two weeks. 
+
+??HORIZONTAL
+## Iterative Sprint Reviews
+* Every two weeks
+* beginning Tue 22.10.2019 / Wed 23.10.2019 
+* until Tue 17.12.2019 / Wed 18.12.2019
+* 21:00-21:30 or 21:30-22:00
+* That means 5 times 30 minute video chat
+
+??NOTE
+* Please let me know if a group needs a shift in those dates
 
 ??HORIZONTAL
 ## Teambuilding I
@@ -61,7 +66,6 @@ To find the proper groups, we will do now some small exercises. Please first lin
 ## Teambuilding II
 Asuming, the room mirrors the area of germany, please position yourself where you come from in reality.
 
-??NOTE
 
 ??HORIZONTAL
 ## Teambuilding III
@@ -79,19 +83,38 @@ Select a group name
 
 ??HORIZONTAL
 ## Presentations
-* All Presentations have to be prepared until 9.11.2019 <!-- .element: class="fragment" -->
-* Shall take about 20 min and 10 min questions <!-- .element: class="fragment" -->
-* As Preperation work through the "Getting Started" Tutorials <!-- .element: class="fragment" -->
-* Present the CoreFeatures of the specific Famework <!-- .element: class="fragment" -->
+* All presentations have to be prepared until 9.11.2019 <!-- .element: class="fragment" -->
+* Shall take about 20 min presentation and 10 min questions <!-- .element: class="fragment" -->
+* As preperation work through the "Getting Started" Tutorials <!-- .element: class="fragment" -->
+* Present the core features of the specific famework <!-- .element: class="fragment" -->
 * Give a simple example from Getting Started <!-- .element: class="fragment" -->
 * Give your groups gut feeling. Did you like the Framework? Do you want to use it for your project? <!-- .element: class="fragment" -->
 
 ??HORIZONTAL
 ## Presentations
-* <a href="https://www.webcomponents.org/introduction">WebComponents</a> <!-- .element: class="fragment" -->
-* <a href="https://angular.io/tutorial">Angular</a> <!-- .element: class="fragment" -->
-* <a href="https://www.valentinog.com/blog/redux/">React Redux</a> <!-- .element: class="fragment" -->
-* <a href="https://guide.elm-lang.org/">Elm</a> <!-- .element: class="fragment" -->
+<a href="https://www.webcomponents.org/introduction"><img src="images/webcomponents.jpg"></a>
+
+??NOTE
+You do not need to use the framework, you present here, as framework in your software project. Just get an impression and inspiration what fits your needs. So which group takes which framework to present?
+
+
+??HORIZONTAL
+## Presentations
+<a href="https://angular.io/tutorial"><img src="images/angular.svg" width="25%"></a>
+
+??NOTE
+You do not need to use the framework, you present here, as framework in your software project. Just get an impression and inspiration what fits your needs. So which group takes which framework to present?
+
+??HORIZONTAL
+## Presentations
+<a href="https://www.valentinog.com/blog/redux/"><img src="images/react-redux.png"></a>
+
+??NOTE
+You do not need to use the framework, you present here, as framework in your software project. Just get an impression and inspiration what fits your needs. So which group takes which framework to present?
+
+??HORIZONTAL
+## Presentations
+<a href="https://guide.elm-lang.org/"><img src="images/elm.png"></a>
 
 ??NOTE
 You do not need to use the framework, you present here, as framework in your software project. Just get an impression and inspiration what fits your needs. So which group takes which framework to present?
@@ -118,25 +141,25 @@ Before I present you my ideas for Software Projects you can implement, let me sa
 7. And finally I get access to your wiki, where you will document your process and potential ugly parts that might arise.
 8. When you think your done, you will tag the wiki and the repository with "Abschluß" and give me in adition the sha hashes of them. By that I will be able to have a final state of your work and will mark exactly that.
 
-??HOIZONTAL
+??HORIZONTAL
 ## Proposal I
-# Mensch ärgere Dich nicht
-Bild
+### Mensch ärgere Dich nicht
+<img src="images/mensch_aergere_dich_nicht.jpg">
 
 ??NOTE
 Let's make a clone of the well known board game. There should also be a computer player to play against.
 
 ??HORIZONTAL
 ## Proposal II
-# Crossword Puzzle
-
+### Crossword Puzzle
+<img src="images/kreuzwort_raetsel.png" width="50%">
 ??NOTE
 Let the user enter a word, look it up on wikipedia and randomly select words from that article and combine them to a crossword puzzle. The user will get a list of the used words and can by drag and drop complete the puzzle.
 
 ??HORIZONTAL
 ## PROPOSAL III
-# DataDetector
-## with Electron
+### DataDetector (with Electron)
+<img src="images/data_detector.jpg" width="50%">
 
 ??NOTE
 A tool that scans a specific directory on your harddrive and displays which subdirectory needs how much disk space.
@@ -144,15 +167,8 @@ To be able to access the hardware we use Electron.
 
 ??HORIZONTAL
 ## PROPOSAL IV
-# Stock Checker 
-## Browser Plugin
+### Stock Checker (Browser Plugin)
+<img src="images/stock_checker.jpg" width="50%">
 
 ??NOTE
 A Browser Plugin, that is able to check when one of the users selected stock values exceeds or falls below a certain price. By the way, although I will show you how to use our api, I will gain nothing from it, since it is very unrealistic that my company will provide such a tool to the users.
-
-??HORIZONTAL
-## Proposal II
-# Mensch ärgere Dich nicht!
-Bild
-
-??NOTE
