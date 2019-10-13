@@ -32,6 +32,10 @@ Jeder von Ihnen hat vermutlich heute ein Smartphone in der Tasche.  -->
 I know, I know, you are very interested in the topic itself. But somehow you need a grade for this course. So the good message is, there won't be Test for this course. But I have several bad news for you. You will do a presentation about a web framework, which will take 20% of the end result. In addition we will create a Software project together. This will be some kind of simple Frontend only game or if you come up with an interesting idea, I would like to support you in realizing it. But the Project itself and how you present it will only be rated with 40% of the complete grade. The missing 40% I will spend on the way you will implement the project. So what quality measures do you take, how fast can you deploy a new version and similar aspects, that we will discuss on the second seminar day.
 
 ??HORIZONTAL
+## Good Luck
+<img src="images/Bewertung_2.jpg">
+
+??HORIZONTAL
 ## Other organizational stuff
 * Thu 10.10.2019 10:00-17:30
 * Thu 07.11.2019 10:00-17:30
