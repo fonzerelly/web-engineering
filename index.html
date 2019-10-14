@@ -1,39 +1,54 @@
 <html>
-    <head>
-        <link rel="stylesheet" href="node_modules/reveal.js/css/reveal.css">
-        <link rel="stylesheet" href="node_modules/reveal.js/lib/css/zenburn.css">
-        <link rel="stylesheet" href="node_modules/reveal.js/css/theme/white.css">
-        <meta charset="UTF-8">
-        <style>
-            .reveal section img {
-                border: 0px;
-                box-shadow: none;
-            }
-        </style>
-    </head>
-    <body>
-        <div class="reveal">
-            <div class="slides">
-                <section><h1>Web Engineering</h1></section>
-                <section data-markdown="introduction.md"
-                     data-separator="^\?\?HORIZONTAL"
-                     data-separator-vertical="^\?\?VERTICAL"
-                     data-separator-notes="^\?\?NOTE"
-                     data-charset="UTF-8">
-                </section>
-                <section data-markdown="development_process.md"
-                     data-separator="^\?\?HORIZONTAL"
-                     data-separator-vertical="^\?\?VERTICAL"
-                     data-separator-notes="^\?\?NOTE"
-                     data-charset="UTF-8">
-                </section>
-                <section>
-                    <h1>To be continued ...</h1>
-                    <br><br>
-                    Christian H&ouml;rauf<br>
-                    <img src="images/twitter.png" width="5%"><sup>@fonzygruen</sup>
-                </section>
-                <!-- <section>
+
+<head>
+    <link rel="stylesheet" href="node_modules/reveal.js/css/reveal.css">
+    <link rel="stylesheet" href="node_modules/reveal.js/lib/css/zenburn.css">
+    <link rel="stylesheet" href="node_modules/reveal.js/css/theme/white.css">
+    <meta charset="UTF-8">
+    <style>
+        .reveal section img {
+            border: 0px;
+            box-shadow: none;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="reveal">
+        <div class="slides">
+            <section>
+                <h1>Web Engineering</h1>
+            </section>
+            <section>
+                <h2>Overview</h2>
+                <ul>
+                    <li><a href="/#/introduction">Introduction</a></li>
+                    <li><a href="/#/development_process">Software Development Process</a></li>
+                </ul>
+            </section>
+            <section 
+                data-markdown="introduction.md" 
+                data-separator=""
+                data-separator-vertical="^\?\?HORIZONTAL" 
+                data-separator-notes="^\?\?NOTE" 
+                data-charset="UTF-8"
+                id="introduction">
+            </section>
+            <section 
+                data-markdown="development_process.md" 
+                data-separator=""
+                data-separator-vertical="^\?\?HORIZONTAL" 
+                data-separator-notes="^\?\?NOTE" 
+                data-charset="UTF-8"
+                id="development_process">
+            </section>
+            <section>
+                <h1>To be continued ...</h1>
+                <br><br>
+                Christian H&ouml;rauf<br>
+                <img src="images/twitter.png" width="5%"><sup>@fonzygruen</sup>
+            </section>
+            <!-- <section>
                     <h2>Literature</h2>
                     <ul>
                         <li><a href="https://www.amazon.de/Extreme-Ownership-Navy-Seals-Lead/dp/1250183863/ref=sr_1_1?ie=UTF8&qid=1529882105&sr=8-1&keywords=extreme+ownership">Extreme Ownership</a> by Jocko Willink and Leif Babin</li>
@@ -42,29 +57,30 @@
                         <li><a href="https://www.amazon.de/Phoenix-Project-Gene-Kim/dp/1942788290/ref=sr_1_1?s=books-intl-de&ie=UTF8&qid=1529880869&sr=1-1&keywords=phoenix+project">The Phoenix Project</a> by Gene Kim</li>
                     </ul>
                 </section> -->
-            </div>
         </div>
-        <script src="node_modules/reveal.js/js/reveal.js"></script>
-        <script src="node_modules/reveal.js/plugin/markdown/marked.js"></script>
-        <script src="node_modules/reveal.js/plugin/markdown/markdown.js"></script>
-        <script src="node_modules/reveal.js/plugin/highlight/highlight.js"></script>
-        <script src="node_modules/reveal.js/plugin/notes/notes.js"></script>
-        <script src="node_modules/reveal.js/plugin/notes-server/client.js"></script>
-        <script>
-            Reveal.initialize({
-                controls: false,
-                progress: false,
-                history: true,
-                hideAddressBar: true,
-                transition: "none"
-            })
-        </script>
-        <script>
-            var link = document.createElement( 'link' );
-            link.rel = 'stylesheet';
-            link.type = 'text/css';
-            link.href = window.location.search.match( /print-pdf/gi ) ? 'node_modules/reveal.js/css/print/pdf.css' : 'node_modules/reveal.js/css/print/paper.css';
-            document.getElementsByTagName( 'head' )[0].appendChild( link );
-        </script>
-    </body>
+    </div>
+    <script src="node_modules/reveal.js/js/reveal.js"></script>
+    <script src="node_modules/reveal.js/plugin/markdown/marked.js"></script>
+    <script src="node_modules/reveal.js/plugin/markdown/markdown.js"></script>
+    <script src="node_modules/reveal.js/plugin/highlight/highlight.js"></script>
+    <script src="node_modules/reveal.js/plugin/notes/notes.js"></script>
+    <script src="node_modules/reveal.js/plugin/notes-server/client.js"></script>
+    <script>
+        Reveal.initialize({
+            controls: false,
+            progress: false,
+            history: true,
+            hideAddressBar: true,
+            transition: "none"
+        })
+    </script>
+    <script>
+        var link = document.createElement('link');
+        link.rel = 'stylesheet';
+        link.type = 'text/css';
+        link.href = window.location.search.match(/print-pdf/gi) ? 'node_modules/reveal.js/css/print/pdf.css' : 'node_modules/reveal.js/css/print/paper.css';
+        document.getElementsByTagName('head')[0].appendChild(link);
+    </script>
+</body>
+
 </html>
