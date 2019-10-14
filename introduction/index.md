@@ -25,14 +25,14 @@ Jeder von Ihnen hat vermutlich heute ein Smartphone in der Tasche.  -->
 
 ??HORIZONTAL
 ## How you will be graded
-<img src="images/Bewertung_1.jpg">
+<img src="introduction/images/Bewertung_1.jpg">
 
 ??NOTE
 I know, I know, you are very interested in the topic itself. But somehow you need a grade for this course. So the good message is, there won't be Test for this course. But I have several bad news for you. You will do a presentation about a web framework, which will take 20% of the end result. In addition we will create a Software project together. This will be some kind of simple Frontend only game or if you come up with an interesting idea, I would like to support you in realizing it. But the Project itself and how you present it will only be rated with 40% of the complete grade. The missing 40% I will spend on the way you will implement the project. So what quality measures do you take, how fast can you deploy a new version and similar aspects, that we will discuss on the second seminar day.
 
 ??HORIZONTAL
 ## Good Luck
-<img src="images/Bewertung_2.jpg">
+<img src="introduction/images/Bewertung_2.jpg">
 
 ??HORIZONTAL
 ## Other organizational stuff
@@ -41,6 +41,7 @@ I know, I know, you are very interested in the topic itself. But somehow you nee
 * Sat 09.11.2019 10:00-17:30
 * Thu 12.12.2019 10:00-17:30
 * Sat 14.12.2019 10:00-17:30
+* xxx xx.01.2020 10:00-17:30 <!-- .element: class="fragment" -->
 * xxx xx.01.2020 10:00-17:30 <!-- .element: class="fragment" -->
 
 ??NOTE
@@ -95,7 +96,7 @@ Select a group name
 
 ??HORIZONTAL
 ## Presentations
-<a href="https://www.webcomponents.org/introduction"><img src="images/webcomponents.jpg"></a>
+<a href="https://www.webcomponents.org/introduction"><img src="introduction/images/webcomponents.jpg"></a>
 
 ??NOTE
 You do not need to use the framework, you present here, as framework in your software project. Just get an impression and inspiration what fits your needs. So which group takes which framework to present?
@@ -103,21 +104,21 @@ You do not need to use the framework, you present here, as framework in your sof
 
 ??HORIZONTAL
 ## Presentations
-<a href="https://angular.io/tutorial"><img src="images/angular.svg" width="25%"></a>
+<a href="https://angular.io/tutorial"><img src="introduction/images/angular.svg" width="25%"></a>
 
 ??NOTE
 You do not need to use the framework, you present here, as framework in your software project. Just get an impression and inspiration what fits your needs. So which group takes which framework to present?
 
 ??HORIZONTAL
 ## Presentations
-<a href="https://www.valentinog.com/blog/redux/"><img src="images/react-redux.png"></a>
+<a href="https://www.valentinog.com/blog/redux/"><img src="introduction/images/react-redux.png"></a>
 
 ??NOTE
 You do not need to use the framework, you present here, as framework in your software project. Just get an impression and inspiration what fits your needs. So which group takes which framework to present?
 
 ??HORIZONTAL
 ## Presentations
-<a href="https://guide.elm-lang.org/"><img src="images/elm.png"></a>
+<a href="https://guide.elm-lang.org/"><img src="introduction/images/elm.png"></a>
 
 ??NOTE
 You do not need to use the framework, you present here, as framework in your software project. Just get an impression and inspiration what fits your needs. So which group takes which framework to present?
@@ -147,7 +148,7 @@ Before I present you my ideas for Software Projects you can implement, let me sa
 ??HORIZONTAL
 ## Proposal I
 ### Mensch ärgere Dich nicht
-<img src="images/mensch_aergere_dich_nicht.jpg">
+<img src="introduction/images/mensch_aergere_dich_nicht.jpg">
 
 ??NOTE
 Let's make a clone of the well known board game. There should also be a computer player to play against.
@@ -155,14 +156,14 @@ Let's make a clone of the well known board game. There should also be a computer
 ??HORIZONTAL
 ## Proposal II
 ### Crossword Puzzle
-<img src="images/kreuzwort_raetsel.png" width="50%">
+<img src="introduction/images/kreuzwort_raetsel.png" width="50%">
 ??NOTE
 Let the user enter a word, look it up on wikipedia and randomly select words from that article and combine them to a crossword puzzle. The user will get a list of the used words and can by drag and drop complete the puzzle.
 
 ??HORIZONTAL
 ## PROPOSAL III
 ### DataDetector (with Electron)
-<img src="images/data_detector.jpg" width="50%">
+<img src="introduction/images/data_detector.jpg" width="50%">
 
 ??NOTE
 A tool that scans a specific directory on your harddrive and displays which subdirectory needs how much disk space.
@@ -171,7 +172,7 @@ To be able to access the hardware we use Electron.
 ??HORIZONTAL
 ## PROPOSAL IV
 ### Stock Checker (Browser Plugin)
-<img src="images/stock_checker.jpg" width="50%">
+<img src="introduction/images/stock_checker.jpg" width="50%">
 
 ??NOTE
 A Browser Plugin, that is able to check when one of the users selected stock values exceeds or falls below a certain price. By the way, although I will show you how to use our api, I will gain nothing from it, since it is very unrealistic that my company will provide such a tool to the users.
