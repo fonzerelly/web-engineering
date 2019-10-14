@@ -1,6 +1,5 @@
 Christian H&ouml;rauf<br>
 <img src="images/twitter.png" width="5%"><sup>@fonzygruen</sup><br>
-Email: christian.hoerauf@gmail.com
 
 ??Note
 Welcome to the Seminar of Web-Engineering. My name is Christian Hörauf, and I have been working the IT-Industry for 16 years now. 7 of them I spend in the Web-Business as Frontend Developer. Currently I work for Consorsbank in Nürnberg.
