@@ -16,101 +16,102 @@ TAG 1
         0.2.5 Projektidee Stars-Graph (IMDB API)
         0.2.6 Projektidee Github Contribution Ranking (Github API)
 
-1 Geschichte der Client-Server-Architektur
-    1.0 HTTP-Prototokol
-    1.1 Serverside Rendering
-    1.2 Single-Side-Pages mit REST
-    1.3 WebSockets
-    1.3 Exot: Meteor
+1 Software Entwicklungsprozess
+    1.0 Agile Manifest vs Waterfall
+    1.1 Scrum
+        1.1.1 Rollen (PO, SM, Team)
+        1.1.2 Dokumente (DoD, DoR, UserStory, Epic)
+        1.1.3 Sprint
+        1.1.4 Meetings (Daily, Planning I, Planning II, Storytime, Review, Retro)
+        1.1.5 Tools (Trello, Github)
 
-2 Software Entwicklungsprozess
-    2.0 Agile Manifest vs Waterfall
-    2.1 Scrum
-        2.1.1 Rollen (PO, SM, Team)
-        2.1.2 Dokumente (DoD, DoR, UserStory, Epic)
-        2.1.3 Sprint
-        2.1.4 Meetings (Daily, Planning I, Planning II, Storytime, Review, Retro)
-        2.1.5 Tools (Trello, Github)
-    2.2 Extreme Ownership (bzw. was häufig in der Praxis fehlt)
-    2.3 Domain Driven Design
-        2.3.0 Ubiquitäre Sprache
-        2.3.1 Event Storming
-        2.3.2 Hexagonale Architektur
-        2.3.3 Bestandteile des Domänen Models
+    1.2 Scratch Seminar
+        1.2.1 Kurze Vorstellung von Scratch und seiner Funktionsweise
+        1.2.2 Eigentständige Bearbeitung der Aufgabenstellung Krabbe fangen
+        1.2.3 Space Invaders
+            1.2.3.1 User Story schätzen
+            1.2.3.2 Eigenarbeit Implementierung in Scratch
 
-3 Scratch Seminar
-    3.1 Kurze Vorstellung von Scratch und seiner Funktionsweise
-    3.2 Eigentständige Bearbeitung der Aufgabenstellung Hexenwald
-    3.3 Mob Programming: Space Invaders
+
+    
+
 
 
 TAG 2
-4 Qualitätsmaßnahmen
-    4.1 Versionskontrolle mit Git
-        4.1.1 Wozu Versionskontrolle
-        4.1.2 Zentralisierte Versionskontroll Systeme
-        4.1.2 Grundlegende Gitbefehle
-        4.1.3 Git Workflows
-    4.2 Continious Integration
-        4.2.1 Wozu Continious Integration
-        4.2.2 Linux-Shell und wichtigste Shellscripte
-        4.2.3 Travis CI
-    4.3 Automatische Tests
-        4.3.1 Test Pyramide
-        4.3.2 Testarten (Unit-, Integrations-, Acceptanztests)
-        4.3.3 TestDrivenDevelopment
-        4.3.4 CodeCoverage vs Mutation Based Testing
-        4.3.5 Proberty Based Testing
-        4.3.6 Cucumber & Gherkyn
-    4.4? Continious Deployment
-        4.4.1 Dev- vs Test- vs Produktivumgebung
-        4.4.2 Docker
-        4.4.3 Kybernetis
+2 Qualitätsmaßnahmen
+    2.1 Versionskontrolle mit Git
+        2.1.1 Wozu Versionskontrolle
+        2.1.2 Zentralisierte Versionskontroll Systeme
+        2.1.2 Grundlegende Gitbefehle
+        2.1.3 Git Workflows
+    
+    2.2 Automatische Tests
+        2.2.1 Test Pyramide
+        2.2.2 Testarten (Unit-, Integrations-, Acceptanztests)
+        2.2.3 TestDrivenDevelopment
+        2.2.4 CodeCoverage vs Mutation Based Testing
+        2.2.5 Property Based Testing
+        2.2.6 Cucumber & Gherkyn
+    2.3 Continious Integration
+        2.3.1 Wozu Continious Integration
+        2.3.2 Linux-Shell und wichtigste Shellscripte
+        2.4.3 Travis CI
 
-5 Git / npm Seminar
-    5.1 Git-Kata
-    5.2 Veröffentlichen via Github-Pages
-    5.3 npm und package.json
-    5.4 npm scripte
-    5.5 TDD im MobProgramming
+    2.4 Git / npm Seminar
+        2.4.1 Git-Kata
+        2.4.2 Veröffentlichen via Github-Pages
+        2.4.3 npm und package.json
+        2.4.4 npm scripte
+        2.4.5 TDD im MobProgramming
+        2.4.6 Deployment nach Travis CI
 
 TAG 3
-6 JavaScript
-    6.1 Geschichte von JavaScript
-        6.1.1 Eine Programmiersprache in 10 Tagen
-        6.1.2 BrowserWars
-        6.1.3 V8 und NodeJS
-        6.1.4 JS als CompileTarget
-    6.2 Warum JavaScript anders ist als andere Programmiersprachen
-        6.2.1 == vs ===
-        6.2.2 IEEE 764 Probleme
-        6.2.3 Hoisting
-        6.2.4 Prototypal Inheritance
-        6.2.5 this ist nicht gleich this
-    6.3 Man kann alles fixen
-        6.3.1 Polyfills und Shims
-        6.3.2 jQuery
-        6.3.3 Underscore, Lodash, Ramda
-        6.3.4 mocha, jasmine, jest
+3 Geschichte der Client-Server-Architektur
+    3.0 HTTP-Prototokol
+    3.1 Serverside Rendering
+    3.2 Single-Side-Pages mit REST
+    3.3 WebSockets
+    3.4 Serverside Events
+4 JavaScript
+    4.1 Geschichte von JavaScript
+        4.1.1 Eine Programmiersprache in 10 Tagen
+        4.1.2 BrowserWars
+        4.1.3 V8 und NodeJS
+        4.1.4 JS als CompileTarget
+    4.2 Warum JavaScript anders ist als andere Programmiersprachen
+        4.2.1 == vs ===
+        4.2.2 IEEE 764 Probleme
+        4.2.3 Hoisting
+        4.2.4 Prototypal Inheritance
+        4.2.5 this ist nicht gleich this
+    4.3 Man kann alles fixen
+        4.3.1 Polyfills und Shims
+        4.3.2 jQuery
+        4.3.3 Underscore, Lodash, Ramda
+        4.3.4 mocha, jasmine, jest
 
-    6.4 Studentenreferate
+    4.4 Studentenreferate
+        4.4.1 WebComponents
+        4.4.2 Angular
+        4.4.3 React / Redux
+        4.4.4 Elm
 
 TAG 4
-    6.5 Asynchrone Programmierung in JS
-        6.5.1 SingleThread Language & Event Loop
-        6.5.2 Callback-Hell
-        6.5.3 Promises
-        6.5.4 async / await
-        6.5.5 rx.js
+    5.5 Asynchrone Programmierung in JS
+        5.5.1 SingleThread Language & Event Loop
+        5.5.2 Callback-Hell
+        5.5.3 Promises
+        5.5.4 async / await
+        5.5.5 rx.js
 
-    6.6. Funktionale Programmierung in JS
-        6.6.1 Functions sind first class citicens
-        6.6.2 Higher Order Functions
-        6.6.3 Closures
-        6.6.4 Currying
-        6.6.5 Componieren von Funktionen
-        6.6.6 Seiteneffekte
-        6.6.7 filter map reduce
+    5.6. Funktionale Programmierung in JS
+        5.6.1 Functions sind first class citicens
+        5.6.2 Higher Order Functions
+        5.6.3 Closures
+        5.6.4 Currying
+        5.6.5 Componieren von Funktionen
+        5.6.6 Seiteneffekte
+        5.6.7 filter map reduce
 
     6.7 Seminar Functional Programming (http://jsfiddle.net/0edzvay0/)
 
