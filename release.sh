@@ -1,8 +1,8 @@
 #!/bin/sh
 set -e
 echo ------------ start release --------------
-git config credential.helper cache
-echo ***** git configured to request credentials only once
+# git config credential.helper cache
+# echo ***** git configured to request credentials only once
 local_exists=`git show-ref refs/heads/gh-pages`
 if [ -n "$local_exists" ]; then
     git branch -D gh-pages
