@@ -1,6 +1,17 @@
 #!/bin/sh
 set -e
 echo ------------ start release --------------
+local_exists=`git show-ref refs/heads/gh-pages`
+if [ -n "$local_exists" ]; then
+    git branch -D gh-pages
+    echo ***** local gh-pages deleted
+fi
+
+remote_exists=`git ls-remote origin | grep gh-pages`
+if [ -n "$remote_exists" ]; then
+    git push origin --delete gh-pages
+    echo ***** remote gh-pages deleted
+fi
 npm version minor
 echo ***** versioning done
 git checkout -b gh-pages
