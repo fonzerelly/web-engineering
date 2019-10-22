@@ -1,5 +1,5 @@
 #!/bin/sh
-set -e
+#set -e
 echo ------------ start release --------------
 # git config credential.helper cache
 # echo ***** git configured to request credentials only once
