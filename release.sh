@@ -3,7 +3,7 @@ set -e
 echo ------------ start release --------------
 npm version minor
 echo ***** versioning done
-git checkout gh-pages
+git checkout -b gh-pages
 echo ***** in gh-pages
 git merge master -X theirs
 echo ***** master merged
