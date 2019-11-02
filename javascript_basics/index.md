@@ -107,18 +107,30 @@ But all of its power has not been achieved without flaws. And we will now  exami
 ??HORIZONTAL
 ## Functions
 ``` javascript
-    function name () {}
+    function name () {
+        return 'Max Mustermann'
+    }
     const anonymous = function () {}
     const inc = (x) => x + 1            // simple Arrow Function 
                                         // implicitly returns last 
                                         // statement
 
-    const safeFirst = (list) => {       // when creating complex 
+    const safeHead = (list) => {        // when creating complex 
         if (list.length === 0) {        // anonymous functions
             return null                 // in curly braces,
         }                               // you have to use
         return list[0]                  // return
     }
+```
+
+??HORIZONTAL
+## Function Parameters
+``` javascript
+    const add = (a, b) => a + b
+    const toArray = (...args) => args   //spread
+    
+    add(1)              // NaN because b was undefined
+    add(1,2,3,4,5,6,7)  // 3 because the other parameters are just ignored
 ```
 
 ??HORIZONTAL
@@ -144,7 +156,7 @@ But all of its power has not been achieved without flaws. And we will now  exami
         "city": "00001 Exempelstadt",   // values may be plain 
         "street": "Beispielstrasse",    // for numbers and booleans 
         "nr": 19                        // Methods are NOT allowed
-    },                                  // for in JSON-Format
+    },                                  // in JSON-Format
     "platin-user": true                 
 }
 ```
@@ -157,43 +169,228 @@ But all of its power has not been achieved without flaws. And we will now  exami
     const addressString = JSON.stringify(user.address)
 ```
 
+??HORIZONTAL
+## Classes
+``` javascript
+class MyClass {
+    constructor(a) {
+        this._a = a
+    }
+    set a (v) {
+        this._a = v
+    }
+    get a () {
+        return this._a
+    }
+    method () {}                            // This method is only available on instances
+}
+MyClass.prototype.staticMethod = () => {}   // This method is always available
+
+```
+
+??HORIZONTAL
+## if-else
+``` javascript
+    const k = 3
+    let result
+    if (k % 3 === 0) {
+        result = 'valid'
+    } else {
+        result = 'invalid'
+    }
+
+    const result2 = (k % 3 === 0) ? 'valid' : 'invalid'      // DO NOT CASCATE THIS
+```
+
+??HORIZONTAL
+## switch-case
+``` javascript
+    const fruit = 'banana'
+    let price
+    switch (fruit) {               // can you see the problem here?
+        case 'orange':
+            price = 0.59
+            break;
+        case 'banana':
+            price = 0.48
+
+        case 'apple':
+            price = 0.32
+            break;
+        default:
+            throw new Error('unknown fruit type')
+    }
+```
+
+??HORIZONTAL
+## preferred switch-case
+``` javascript
+    const fruit = 'banana'
+    const pricePerFruit = {
+        orange: 0.59,
+        banana: 0.48,
+        apple: 0.32
+    }
+    const price = pricePerFruit[fruit]
+    if (!price) {
+        throw new Error ('unknown fruit type') 
+    }
+```
+
+??HORIZONTAL
+## classic Loops
+``` javascript
+const myList = [1, 2, 3, 4, 5]
+
+for (let i=0; i<myList.length; i++) {
+    const entry =  myList[i]
+    // do something with entry
+}
+
+let i = myList.length
+while (i > 0) {
+    const entry = myList[--i]
+    // do sometihng with entry
+}
+
+i = myList.length
+do {
+    const entry = myList[--i]
+    // do sometihng with entry
+} while (i > 0)
+
+const myObj = {a: 1, b: 2, c:3}
+for (var key in myObj) {
+    const value = myObj[key]
+    // do something with value
+}
+
+```
+
+??HORIZONTAL
+## Better loops on arrays
+``` javascript
+const myList = [1, 2, 3, 4, 5]
+
+myList.forEach((entry, index, array) => {       // if you just need to do something
+    // do something                             // with each entry in a list
+})
+
+myList.map((entry, index, array) => {           // if you want to create a modified copy
+    // create modified version of entry         // of you list
+    return entry + 1                            // here it results in [2, 3, 4, 5, 6]
+})
+
+myList.filter((entry, index, array) => {        // if you want to create a copy of your 
+    // check a characteristic of the entry      // list, where all entries are removed that
+    return entry % 2 === 0 // boolean           // do not fullfill a characteristic [2, 4]
+})
+
+const neutralValue = 0;
+myList.reduce((accumulated, entry, index, array) => { // if you want to boil down an array
+    // combine accumulated value with enty            // to one value completely differnt
+    return accumlated + entry                         // from its former structure
+}, 0)                                                 // here we create the sum 15
+```
 
 
 ??HORIZONTAL
-## Array
-??HORIZONTAL
-## Numbers
-```
-    
+## Decomposition and the spread operator
+``` javascript
+const [a, b] = [1, 2, 3]            // a = 1, b = 2
+
+const {c} = {a: 1, b: 2, c: 3}      // c = 3
+
+const myList = [1, 2, 3]
+
+const newList = [...myList, 4, 5]   // 1, 2, 3, 4, 5
+
+const myObj = {a: 1, b: 2}
+
+const newObj = {...myObj, c: 3}     // {a: 1, b: 2, c: 3}
 ```
 
-<!-- ??HORIZONTAL
+??HORIZONTAL
+## Names Parameters by decomposition
+``` javascript
+const a = 1
+const b = 2
+const c = 3
+
+const aFunction = (a, b, c) => { /* you never know what a, b and c are */}
+
+aFunction(b, c, a) // such a mistake might can be hard to find
+
+const fnWithNamedParams = ({a, b, c}) => { /* here the params do not depend on the order */}
+
+fnWithNamedParams({b, c, a}) // here the order does not matter, since the values are
+                             // sorted properly by decomposition to their names
+```
+
+??HORIZONTAL
+## Flaws
+
+??HORIZONTAL
 ## == is not the same as ===
+``` javascript
+const a = 1
+if (a == '1') {
+    // you would not expect that this evaluates here
+    // but due to type casting it would
+}
+
+if (a === '1') {
+    // tripple equals do not cast the type
+    // so prefere to use tripple equals
+    // this would not be evaluated
+}
+```
 ??NOTE
 Flaws in a Programming language are things that make the reading of a programming language unintitive.
 For example from other languages like java you already know that finding the equality of two things is not that easy as it sounds. When you apply == in Java to two variables and those variables carry only basic datatypes like integers or boolean, then you can be sure, that this operation returns true if those values are equal and false if they are not.
 
-Not so in JavaScript. Here you 
+Not so in JavaScript. Here the data gets casted to a fitting datatype. It tries to be helpful and prevent exceptions as good as possible. Unfortunately this leads to unintuitive code and to logic errors that might be hard to find.
 
-## undefined, null, Nan, Infinity
-
-
-## 1 + '1'
-??HORIZONTAL
-## Hoisting, var, let const
+Therefore please do not use double equals, prefere tripple equals instead.
 
 ??HORIZONTAL
-## Decomposition
+## 1 + '2'
+``` javascript
+const a = 1 + '2'   // '12'
+```
+??NOTE
+Similar is the problem of the undecidable + operator. + in context of number of course mean
+addition. so 1 + 2 equals 3. And you can also concatenate strings by the plus operator.  
+BUT would happen, when you try to add a number and string. Here the number gets casted into a string and both strings get concatenated to the string '12'. This is also an error that is hard to track down.
 
 ??HORIZONTAL
-## Funktionen und ES6 Syntax
+## Falsy values
+``` javascript
+if (false) { /* will not be evaluated */ }
 
+const myObj = {a:21, b:42}
+const c = myObj.c // undefined automatically applied by js
+if (c) { /* will not be evaluated */ }
 
-??HORIZONTAL
-## named parameter by decomposition
+myObj.c = null  // use null to intentionally set a value to a falsy value
+if (c) { /* will not be evaluated */ }
 
+myObj.c = ''
+if (c) { /* will not be evaluated */ }
 
-??Scope  
-und IFFE (Immediate Function ...)
+myObj.c = 0
+if (c) { /* will not be evaluated */ }
 
-??HORIZONTAL -->
+// BUT!!
+
+undefined !== null !== NaN !== 0 !== ''
+// And probably you would not expect an empty string to be falsy.
+```
+
+??NOTE
+In JS there are different values that get interpret by javascript as falsy.
+Not only false, what is obvious, but also a value called "undefined". Undefined is very similar to null, but
+it gets set by JS automatically to prevent exceptions. So do not set values to undefined manually. If you want
+to set a value intentionally to not existent, then use "null" instead. In addition NaN is no truthy value. 
+What you maybe would not expect to be false is empty string and the number zero. Both get casted to false.
+
