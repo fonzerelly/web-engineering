@@ -130,7 +130,8 @@ But all of its power has not been achieved without flaws. And we will now  exami
     const toArray = (...args) => args   //spread
     
     add(1)              // NaN because b was undefined
-    add(1,2,3,4,5,6,7)  // 3 because the other parameters are just ignored
+    add(1,2,3,4,5,6,7)  // 3 because the other parameters 
+                        // are just ignored
 ```
 
 ??HORIZONTAL
@@ -151,8 +152,8 @@ But all of its power has not been achieved without flaws. And we will now  exami
 ## JSON
 ``` JSON
 {
-    "name": "Max Mustermann",           // Note, that the keys have to be
-    "address": {                        // in doublequotes
+    "name": "Max Mustermann",           // Note, that the keys have
+    "address": {                        // to be in doublequotes
         "city": "00001 Exempelstadt",   // values may be plain 
         "street": "Beispielstrasse",    // for numbers and booleans 
         "nr": 19                        // Methods are NOT allowed
@@ -182,10 +183,23 @@ class MyClass {
     get a () {
         return this._a
     }
-    method () {}                            // This method is only available on instances
-}
-MyClass.prototype.staticMethod = () => {}   // This method is always available
 
+    // This method is only available on instances
+    method () {} 
+}
+
+// This method is always available
+MyClass.prototype.staticMethod = () => {}
+```
+
+??HORIZONTAL
+## Instance
+``` javascript
+const myInstance = new MyClass(42)
+myInstance.a        // accesses _a via the getter
+myInstance.a = 21   // modifies a via the getter
+
+myInstance._a       // But accessing _a directly is also possible!
 ```
 
 ??HORIZONTAL
@@ -198,8 +212,9 @@ MyClass.prototype.staticMethod = () => {}   // This method is always available
     } else {
         result = 'invalid'
     }
-
-    const result2 = (k % 3 === 0) ? 'valid' : 'invalid'      // DO NOT CASCATE THIS
+    
+    // DO NOT CASCATE THIS
+    const result2 = (k % 3 === 0) ? 'valid' : 'invalid'      
 ```
 
 ??HORIZONTAL
@@ -238,7 +253,7 @@ MyClass.prototype.staticMethod = () => {}   // This method is always available
 ```
 
 ??HORIZONTAL
-## classic Loops
+## for-loop
 ``` javascript
 const myList = [1, 2, 3, 4, 5]
 
@@ -246,19 +261,33 @@ for (let i=0; i<myList.length; i++) {
     const entry =  myList[i]
     // do something with entry
 }
+```
 
+??HORIZONTAL
+## while-loop
+``` javascript
+const myList = [1, 2, 3, 4, 5]
 let i = myList.length
 while (i > 0) {
     const entry = myList[--i]
     // do sometihng with entry
 }
+```
 
-i = myList.length
+??HORIZONTAL
+## do-while-loop
+``` javascript
+const myList = [1, 2, 3, 4, 5]
+let i = myList.length
 do {
     const entry = myList[--i]
     // do sometihng with entry
 } while (i > 0)
+```
 
+??HORIZONTAL
+## for-in-loop
+``` javascript
 const myObj = {a: 1, b: 2, c:3}
 for (var key in myObj) {
     const value = myObj[key]
@@ -268,29 +297,61 @@ for (var key in myObj) {
 ```
 
 ??HORIZONTAL
-## Better loops on arrays
+## forEach
 ``` javascript
 const myList = [1, 2, 3, 4, 5]
 
-myList.forEach((entry, index, array) => {       // if you just need to do something
-    // do something                             // with each entry in a list
-})
+// if you just need to do something
+// with each entry in a list
 
-myList.map((entry, index, array) => {           // if you want to create a modified copy
-    // create modified version of entry         // of you list
-    return entry + 1                            // here it results in [2, 3, 4, 5, 6]
+myList.forEach((entry, index, array) => {
+    // do something                         
 })
+```
+??HORIZONTAL
+## map
+``` javascript
+const myList = [1, 2, 3, 4, 5]
 
-myList.filter((entry, index, array) => {        // if you want to create a copy of your 
-    // check a characteristic of the entry      // list, where all entries are removed that
-    return entry % 2 === 0 // boolean           // do not fullfill a characteristic [2, 4]
+// if you want to create a modified copy
+// of you list
+// here it results in [2, 3, 4, 5, 6]
+
+myList.map((entry, index, array) => {   
+    // create modified version of entry 
+    return entry + 1                    
 })
+```
+
+??HORIZONTAL
+## filter
+``` javascript
+const myList = [1, 2, 3, 4, 5]
+
+// if you want to create a copy of your 
+// list, where all entries are removed that
+// do not fullfill a characteristic [2, 4]
+
+myList.filter((entry, index, array) => {   
+    // check a characteristic of the entry 
+    return entry % 2 === 0 // boolean
+})
+```
+??HORIZONTAL
+## reduce
+``` javascript
+const myList = [1, 2, 3, 4, 5]
+
+// if you want to boil down an array
+// to one value completely different
+// from its former structure
+// here we create the sum 15
 
 const neutralValue = 0;
-myList.reduce((accumulated, entry, index, array) => { // if you want to boil down an array
-    // combine accumulated value with enty            // to one value completely differnt
-    return accumlated + entry                         // from its former structure
-}, 0)                                                 // here we create the sum 15
+myList.reduce((accumulated, entry, index, array) => {
+    // combine accumulated value with enty
+    return accumlated + entry
+}, neutralValue)
 ```
 
 
@@ -308,27 +369,30 @@ const newList = [...myList, 4, 5]   // 1, 2, 3, 4, 5
 const myObj = {a: 1, b: 2}
 
 const newObj = {...myObj, c: 3}     // {a: 1, b: 2, c: 3}
+
+const newObj2 = {a, b, c}           // {a: 1, b: 2, c: 3} uses the 
+                                    // local variablename as key
 ```
 
 ??HORIZONTAL
-## Names Parameters by decomposition
+## Named Parameters by decomposition
 ``` javascript
 const a = 1
 const b = 2
 const c = 3
 
-const aFunction = (a, b, c) => { /* you never know what a, b and c are */}
+/* you never know what a, b and c are */
+const aFunction = (a, b, c) => {}
 
-aFunction(b, c, a) // such a mistake might can be hard to find
+aFunction(b, c, a) // such a mistake might be hard to find
 
-const fnWithNamedParams = ({a, b, c}) => { /* here the params do not depend on the order */}
+ /* here the params do not depend on the order */
+const fnWithNamedParams = ({a, b, c}) => {}
 
-fnWithNamedParams({b, c, a}) // here the order does not matter, since the values are
-                             // sorted properly by decomposition to their names
+fnWithNamedParams({b, c, a}) // here the order does not matter, 
+                             // since the values are sorted properly
+                             // by decomposition to their names
 ```
-
-??HORIZONTAL
-## Flaws
 
 ??HORIZONTAL
 ## == is not the same as ===
@@ -336,7 +400,7 @@ fnWithNamedParams({b, c, a}) // here the order does not matter, since the values
 const a = 1
 if (a == '1') {
     // you would not expect that this evaluates here
-    // but due to type casting it would
+    // but due to type type casting it will
 }
 
 if (a === '1') {
@@ -345,6 +409,7 @@ if (a === '1') {
     // this would not be evaluated
 }
 ```
+
 ??NOTE
 Flaws in a Programming language are things that make the reading of a programming language unintitive.
 For example from other languages like java you already know that finding the equality of two things is not that easy as it sounds. When you apply == in Java to two variables and those variables carry only basic datatypes like integers or boolean, then you can be sure, that this operation returns true if those values are equal and false if they are not.
@@ -362,35 +427,3 @@ const a = 1 + '2'   // '12'
 Similar is the problem of the undecidable + operator. + in context of number of course mean
 addition. so 1 + 2 equals 3. And you can also concatenate strings by the plus operator.  
 BUT would happen, when you try to add a number and string. Here the number gets casted into a string and both strings get concatenated to the string '12'. This is also an error that is hard to track down.
-
-??HORIZONTAL
-## Falsy values
-``` javascript
-if (false) { /* will not be evaluated */ }
-
-const myObj = {a:21, b:42}
-const c = myObj.c // undefined automatically applied by js
-if (c) { /* will not be evaluated */ }
-
-myObj.c = null  // use null to intentionally set a value to a falsy value
-if (c) { /* will not be evaluated */ }
-
-myObj.c = ''
-if (c) { /* will not be evaluated */ }
-
-myObj.c = 0
-if (c) { /* will not be evaluated */ }
-
-// BUT!!
-
-undefined !== null !== NaN !== 0 !== ''
-// And probably you would not expect an empty string to be falsy.
-```
-
-??NOTE
-In JS there are different values that get interpret by javascript as falsy.
-Not only false, what is obvious, but also a value called "undefined". Undefined is very similar to null, but
-it gets set by JS automatically to prevent exceptions. So do not set values to undefined manually. If you want
-to set a value intentionally to not existent, then use "null" instead. In addition NaN is no truthy value. 
-What you maybe would not expect to be false is empty string and the number zero. Both get casted to false.
-
