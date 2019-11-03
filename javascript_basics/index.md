@@ -1,7 +1,6 @@
 # JavaScript Basics
 ??HORIZONTAL
-## History of JavaScript
-* A Programming Language in 10 Days
+<img src="javascript_basics/images/birth_of_js.png" width="65%">
 
 ??NOTE
 * As we already mentioned there was a lot of movement in this upcoming internet technology. The browser wars were raging, because http was the first internet technology, that had the potential to be used by the normal user. Netscape has always been the underdog, but it had been working on the internet technology area long before Microsoft realized, how important the internet would be. It took Microsoft about a year to implement Internet Explorer, while Netscape released every three months a new but maybe incomplete Product. So they were more or less the first company to work in an agile way. But when Microsoft came up with IE, Netscape had to bring a really novelty to the browser to keep also their partnership with sun microsystem, who wanted  to position Java as the Internettechnology. 
@@ -15,11 +14,6 @@ Today we can more or less say, that JavaScript succeeded. JavaScript fulfiled th
 * Its default Data-Format JSON is so deployable, that the new nosql based Database Systems mongodb, couchdb, ...
 * There are even microcontrollers that run javacript 
 And it is so easy to lern, that even without much programming experience you can achieve very fast  good results.
-
-??HORIZONTAL
-## BUT...
-??NOTE
-But all of its power has not been achieved without flaws. And we will now  examine some of those flaws that makes many professional software developers say, that JavaScript is bullshit. But most of this course will prefer the view, that JavaScript is a good thing.
 
 
 ??HORIZONTAL
