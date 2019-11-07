@@ -1,17 +1,18 @@
 # Version Control
 
 ??HORIZONTAL
-## RPG
+<img src="version_control/images/save_game_1.jpg" width="75%">
 ??NOTE
-Did you ever played Video Games? In more detail, did you ever played a RPG (Role Play Game), where you fight monsters with a sword and cast magic spells from time to time? You fight level for level. With lots of drawbacks. When you die you have to begin the level again without your goodies. This can get the feeling of work, if you encounter an end opponent that always kills you. So you try and try again, but without your collection of goodies it is merely impossible to win. So what do you do short before you encounter an end opponent?
+Did  you ever played Video Games? In more detail, did you ever played a RPG (Role Play Game), where you fight monsters with a sword and cast magic spells from time to time? You fight level for level. With lots of drawbacks. When you die you have to begin the level again without your goodies. This can get the feeling of work, if you encounter an end opponent that always kills you. So you try and try again, but without your collection of goodies it is merely impossible to win. So what do you do short before you encounter an end opponent?
 
 ??HORIZONTAL
-## Save Game
+<img src="version_control/images/save_game_2.jpg" width="75%">
+
 ??NOTE
 Of course you safe the game state short before, so that you do not have to redo the complete level. If you loose, you just reload that game state. And if you play a very hard EgoShooter, where each bullet count, you might safe much more often. 
 
 ??HORIZONTAL
-## Git
+<img src="version_control/images/git.png">
 ??NOTE
 This is where a VersionControllSystem like git comes in. When you programm, you might encounter very hard end opponents, like this very complex algorithm, that you are evan afraid of touching it. So you want to preserve the state of your code, to be able to come back to an earlier state when you seem to have corrupted your code.
 Git keeps Track of your code for you. It stores only the differences from version to version, so that it does not take a lot of harddisk, but you can return when ever you want. 
@@ -83,9 +84,9 @@ Now git status does not show the .bak-file any more but it shows that we created
 
 ??HORIZONTAL
 Usually you never store files in git, that can be reproduced by the computer.
-* node_modules (installation packages)
-* compiled files (dist directory)
-* big binary chunks of data
+* node_modules (installation packages) <!-- .element: class="fragment" -->
+* compiled files (dist directory) <!-- .element: class="fragment" -->
+* big binary chunks of data <!-- .element: class="fragment" -->
 
 ??NOTE
 Of course every rule has an exception. We will see this exception, when we talk about github pages.
@@ -127,18 +128,15 @@ After you staged your files you have to commit them. This is the moment, when gi
 Write a Ticket-Id for which this specific code-change was made and describe in a short sentence what change had been done.
 
 ??HORIZONTAL
-## Anectode Time...
+## Anecdote Time...
 ??NOTE
 Once I had a team mate who liked nothing more, than commiting about 30 Files together with hundreds of lines changed in one commit. And the commit message he left, was "Eins Zwei Polizei". Such a behaviour is an aggresive act of antisocialism and ignorance that I still feel pain in my stomach when I remember this a**hole...
 So please make sure, I will never have to see such an idiotic commit message in your git history. 
 
-??HORIZONTAL
-## Collaboration
-??NOTE
 But that save-functionality allone whould not be something, that would make git outstanding. Instead, its ability to allow collaboration makes it so outstanding. So imagine you are not only playing the RPG I mentioned earlier. Think of being a team, where each member does something different to fullfill the mission goal, similar to WorldOfWarcraft.
 
 ??HORIZONTAL
-## git perls
+<img src="version_control/images/01_git_pearls_clone.png">
 ??NOTE
 * In this image, each pearl represents such an atomic commit we introduced before. Such a row of perls we call branch. 
 * It is possible to have several branches as you can see here
@@ -154,7 +152,8 @@ $ git checkout -b <Ticket-ID>-<User-Story-Title-Without-Spaces>
 I want to introduce one of the simplest collaborative workflows. When you start to work on a user story/ bugfix, you create a branch of that ticket-id and the ticket-title. Then you can work locally on that branch as long as you want. Without the -b parameter, you will not create a new branch, you can switch between banches.
 
 ??HORIZONTAL
-## git perls with central repository
+<img src="version_control/images/02_git_pearls_feature_branch.png">
+
 ??NOTE 
 What I did not mention until now, is that you up to that point only manipulated your own local version of the project. But there is another copy of it. This is in the central repository. In our case, this central copy is hosted at github. But Git would allow you to have the central repository on any kind of computer. If you would choose to work that way, you would have to take over the maintenance for that computer yourself. And ensuring that there is no dataloss, or that such a computer does not be attacked by hackers is a very big responsibility and explaining that is worth another lecture.
 
@@ -166,8 +165,12 @@ $ git push origin <Ticket-ID>-<User-Story-Title-Without-Spaces>
 If you want to make sure, that your changes do not get lost (maybe due to errors in your laptops hardware), then you should push your data more often, like one time per day. At least when you think you are finished you have to push your branch to the central repository.
 
 ??HORIZONTAL
+<img src="version_control/images/03_git_pearls_push.png">
+
+??HORIZONTAL
 ## PullRequest
-screenshot github PullRequest
+<img src="version_control/images/pull_request.png" width="100%">
+
 ??NOTE
 When you think, that you are done, then you should create a pull request. A pull request can be seen as a proposal for the central repo. The intension here is, that somebody else but you reviews your changes and merges it. Reviewing has two outcomes
 0. It helps to spread the knowledge about the application in your team, so that everybody can fix a bug or add a feature
@@ -175,10 +178,22 @@ When you think, that you are done, then you should create a pull request. A pull
 
 ??HORIZONTAL
 ## Tipps for a code review
-* check your DoD
-* checkout that branch locally and evaluate the tests
-* check if you easily understand the code changes
-* if not, find together with the requester a refactoring
+* check your DoD  <!-- .element: class="fragment" -->
+* checkout that branch locally and evaluate the tests  <!-- .element: class="fragment" -->
+* check if you easily understand the code changes  <!-- .element: class="fragment" -->
+* if not, find together with the requester a refactoring  <!-- .element: class="fragment" -->
+
+??HORIZONTAL
+<img src="version_control/images/04_git_pearls_progress.png" width="100%">
+
+
+??HORIZONTAL
+<img src="version_control/images/05_git_pearls_merge.png" width="100%">
+
+
+??HORIZONTAL
+<img src="version_control/images/git_pearls_7.jpg" width="75%">
+
 
 ??HORIZONTAL
 ## Merge Conflict
@@ -236,14 +251,3 @@ $ git merge -abort
 ??NOTE
 By the way, if you think that you somehow corrupted the merge or you feel that yourself can not solve the merge conflict so easy. Then you can abort the merge
 
-??HORIZONTAL
-## outlook
-* git bisect
-* 
-
-<!-- If there is time left, prepare also 
-* git bisect 
-* .gitignore
-* how to handle
-
--->
