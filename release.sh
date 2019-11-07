@@ -1,9 +1,24 @@
 #!/bin/sh
-set -e
+#set -e
 echo ------------ start release --------------
+# git config credential.helper cache
+# echo ***** git configured to request credentials only once
+local_exists=`git show-ref refs/heads/gh-pages`
+echo $local_exists
+if [ -n "$local_exists" ]; then
+    git branch -D gh-pages
+    echo ***** local gh-pages deleted
+fi
+
+remote_exists=`git ls-remote origin | grep gh-pages`
+echo $remote_exists
+if [ -n "$remote_exists" ]; then
+    git push origin --delete gh-pages
+    echo ***** remote gh-pages deleted
+fi
 npm version minor
 echo ***** versioning done
-git checkout gh-pages
+git checkout -b gh-pages
 echo ***** in gh-pages
 git merge master -X theirs
 echo ***** master merged
