@@ -15,6 +15,10 @@ So then at the beginning of the millenium, some important guys of the IT World m
 So they came up with those four principles.
 
 ??HORIZONTAL
+## Test
+blah blah
+
+??HORIZONTAL
 ## Agile Manifesto
 <img src="development_process/images/agile-manifesto_2.jpg" width="60%">
 
